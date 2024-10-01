@@ -1,0 +1,6 @@
+a=(1,2,3,4,'hello')
+print(a)
+print(a[2])
+print(a[2:4])
+print(len(a))
+print(a)
