@@ -1,15 +1,13 @@
-class square:
-    def __init__(self,side):
-        self.side=side
-    def area(self):
-        print("my area is", self.side**2)
-class circle:
-    def __init__(self,radius):
-        self.radius=radius
-    def area(self):
-        print("My area is", 3.14*self.radius*self.radius)
-    
-osquare=square(5)
-ocircle=circle(5)
-for shape in (osquare,ocircle):
-    shape.area()
+class Computer:
+  def __init__(self):
+    self.__maxprice=1000
+  def sell(self):
+    print("Selling price is",self.__maxprice)
+  def setmaxprice(self,price):
+    self.__maxprice =price
+a=Computer()
+a.sell()
+a.__maxprice=2000
+a.sell()
+a.setmaxprice(2000)
+a.sell()
