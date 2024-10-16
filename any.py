@@ -1,15 +1,15 @@
-from abc import ABC
-class Animal(ABC):
-    def move(self):
-        pass
-class Human(Animal):
-    def move (self):
-        print("human walk with 2 legs")
-class Snake(Animal):
-    def move(self):
-        print("snake crawl with their body")
-a=Animal()
-b=Human()
-b.move()
-c=Snake()
-c.move()
+class square:
+    def __init__(self,side):
+        self.side=side
+    def area(self):
+        print("my area is", self.side**2)
+class circle:
+    def __init__(self,radius):
+        self.radius=radius
+    def area(self):
+        print("My area is", 3.14*self.radius*self.radius)
+    
+osquare=square(5)
+ocircle=circle(5)
+for shape in (osquare,ocircle):
+    shape.area()
