@@ -1,10 +1,9 @@
-
-file=open('file.txt','r')
-print(file.read())
+file=open("file.txt","r")
+print("The whole file")
+a=file.readlines()
+for i in range(1,len(a)+1):
+    if i%2!=0:
+        print(file.readline())
+    else:
+        pass 
 file.close()
-file_write=open('file.txt','w')
-file_write.write("Hii i am Raza i love to do coding")
-file_write.close()
-file_append=open("file.txt",'a')
-file_append.write("Hello i am Heet")
-file_append.close()
