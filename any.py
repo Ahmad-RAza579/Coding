@@ -1,9 +1,12 @@
-with open("file.txt","a") as file:
-    file.write("i am doing coding")
-file.close()
-with open("file.txt","r") as file:
-    data = file.readlines()
-    for i in data:
-        word = i.split()
-        print(word)
-file.close
+data = data2 = ""
+with open ('file.txt') as fp:
+    data = fp.read()
+with open('second.txt') as fp:
+    data2 = fp.read()
+data += "/n"
+data += data2
+with open ('file3.txt', 'w') as fp:
+    fp.write(data)
+
+
+
