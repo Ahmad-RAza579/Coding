@@ -1,12 +1,13 @@
-data = data2 = ""
-with open ('file.txt') as fp:
-    data = fp.read()
-with open('second.txt') as fp:
-    data2 = fp.read()
-data += "/n"
-data += data2
-with open ('file3.txt', 'w') as fp:
-    fp.write(data)
-
-
-
+from tkinter import *
+window=Tk()
+window.title("this is my first game")
+window.geometry("500x400")
+label=Label(text="hello players",fg="black",bg="white")
+button=Button(text="click this",bg="blue",fg="red")
+entry=Entry(fg="green",bg="yellow")
+text=Text(fg="orange",bg="pink")
+label.pack()
+button.pack()
+entry.pack()
+text.pack()
+window.mainloop()
